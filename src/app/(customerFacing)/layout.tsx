@@ -1,12 +1,12 @@
-import { Nav, NavLink } from "@/components/Nav";
-import React from "react";
+import { Nav, NavLink } from "@/components/Nav"
 
-
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic"
 
 export default function Layout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{
+  children: React.ReactNode
+}>) {
   return (
     <>
       <Nav>
@@ -16,5 +16,5 @@ export default function Layout({
       </Nav>
       <div className="container my-6">{children}</div>
     </>
-  );
+  )
 }
